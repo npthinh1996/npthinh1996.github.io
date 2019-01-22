@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+body{
+    font-family: Montserrat, sans-serif;
+    background-color: #eee;
+    color: #111;
+    margin-bottom: 5em;
+}
+h1, h3, h4{
+    margin: 0;
+}
+footer{
+    background-color: #111;
+    color: #eee;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+a{
+    color: #111;
+    text-decoration: none;
+}
+a:hover{
+    color: #aaa;
+}
+ul{
+    margin: 0;
+}
+
+.social{
+    font-size: 2em;
+}
+.text-center{
+    text-align: center;
+}
+.headtitle{
+    border-left: 5px solid green;
+    padding: 5px;
+}
+.headtitle:hover{
+    border-left: 10px solid green;
+}
+.headcontent{
+    color: blue;
+    margin: 15px auto;
+}
+.content{
+    text-align: justify;
+    line-height: 1.5;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 15px;
+}
+.content:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#intro{
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+#avata{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 2px;
+}
+#avata:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+#detail{
+    text-align: left;
+    border-left: 2px dotted #111;
+}
+#butBTT{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 3em;
+    cursor: pointer;
+}
+#butBTT:hover{
+    color: #aaa;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
+@media only screen and (max-width: 992px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    #intro{
+        position: static;
+    }
+    #detail{
+        border-left: none;
+    }
+    #butBTT{
+        right: 10px;
+        bottom: 10px;
+    }
+}
