@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+html, body {
+    background-color: green;
+    font-size: 18px;
+}
+.container {
+    background-color: red;
+    color: #fff;
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 0.5rem double yellow;
+    border-radius: 1rem 1rem 4rem 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+    overflow: hidden;
+    position: relative;
+}
+.thead {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 3rem;
+    text-shadow: 0.25rem 0.25rem 1rem black;
+}
+#head {
+    width: 50%;
+    float: left;
+}
+#image {
+    width: 50%;
+    float: left;
+}
+#btimg {
+    width: inherit;
+    position: absolute;
+    right: -1.25rem;
+    bottom: -1.25rem;
+    transform: rotate(-40deg);
+}
+@media screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+    }
+}
