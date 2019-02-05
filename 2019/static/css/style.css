@@ -14,13 +14,19 @@ html, body {
     box-shadow: 0.5rem 0.5rem 1rem black;
     overflow: hidden;
     position: relative;
+    cursor: default;
 }
 .thead {
     font-family: 'Bungee Inline', cursive;
     font-size: 3rem;
     text-shadow: 0.25rem 0.25rem 1rem black;
 }
+.thead:hover {
+    color: yellow;
+}
 #head {
+    position: relative;
+    z-index: 1;
     width: 50%;
     float: left;
 }
@@ -28,12 +34,24 @@ html, body {
     width: 50%;
     float: left;
 }
+#tpimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(20deg);
+}
 #btimg {
     width: inherit;
     position: absolute;
     right: -1.25rem;
     bottom: -1.25rem;
-    transform: rotate(-40deg);
+    transform: rotate(-30deg);
+    animation: pigA 1s 1s infinite;
+}
+@keyframes pigA {
+    0% {transform: rotate(-30deg)}
+    75% {transform: rotate(-50deg)}
+    100% {transform: rotate(-30deg)}
 }
 @media screen and (max-width: 500px) {
     .container {

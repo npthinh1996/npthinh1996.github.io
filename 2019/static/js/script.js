@@ -1,1 +1,1 @@
-document.getElementsByTagName('html')[0].style.fontSize = window.innerHeight / 35 + "px";
+document.getElementsByTagName('html')[0].style.fontSize = Math.round(screen.availHeight / 39) + "px";
